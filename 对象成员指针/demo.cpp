@@ -13,3 +13,15 @@ using namespace std;
       成员函数:构造函数，析构函数,信息打印函数
 
 */
+int main(void)
+{
+    Line *p = new Line(1,2,3,4);
+    p -> printInfo();
+    delete p;
+    p = NULL;
+    //64位编译环境，所以指针大小为８（32位为4)
+    //Line 中包含了２个指针:8×２ = 16
+    cout << sizeof(p) << endl;
+    cout << sizeof(Line) << endl;
+    return 0;
+}
