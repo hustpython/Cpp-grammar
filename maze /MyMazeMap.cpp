@@ -8,7 +8,7 @@
  * 函数功能：代理类的构造函数
  */
 
-#include "MazeMap.H"
+#include "MazeMap.h"
 #include "MyMazeMap.H"
 
 MyMazeMap::MyMazeMap()//: mazeMap(new MazeMap)
