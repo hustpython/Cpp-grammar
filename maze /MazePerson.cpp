@@ -36,6 +36,7 @@
 
 #include "MazePerson.h"
 #include "MazeMap.h"
+
 //#include "MazeMap.cpp"
 /*
  * 函数名称：MazePerson
@@ -187,7 +188,7 @@ void MazePerson::drawPerson()
 	gotoxy(positionX,positionY);
 	cout << personPic;
 	//为制作动画效果使用时间延迟
-	Sleep(personSpeed);
+	sleep(personSpeed);
 }
 
 /*
@@ -370,7 +371,7 @@ bool MazePerson::moveForward()
 	{
 		gotoxy(positionX,positionY);
 		cout << personPic;
-		Sleep(5000);
+		sleep(5000);
 	}
 	//检查右侧是否是墙，如果是墙，检查前方是否是墙，如果不是墙则前进，前进后检查是否是出口
 	int rightX;
@@ -415,7 +416,7 @@ bool MazePerson::moveForward()
 	//如果右侧是通路
 	else
 	{
-		Sleep(3000);
+		sleep(3000);
 		turnRight();
 		goAhead();
 		return YES;

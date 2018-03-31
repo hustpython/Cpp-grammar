@@ -15,7 +15,8 @@
 
 #include <iostream>
 #include <stdlib.h>
-#include <windows.h>
+//#include <windows.h>
+#include <unistd.h>
 #include "Public.H"
 using namespace std;
 
