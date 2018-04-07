@@ -17,7 +17,7 @@ int main(void)
 {
     Shape shape;
     //1个内存单元标定自己的存在
-    //cout << sizeof(shape) << endl;
+    cout << sizeof(shape) << endl;
 
     //强制类型转换
     int *p = (int *) &shape;
@@ -27,8 +27,8 @@ int main(void)
     int *q = (int*) &circle;
     //cout << q << endl;
     cout << (unsigned int)(*q) << endl;
-    q++;
-    q++;
+    q+=2;
+    //q++;
     cout << (unsigned int)(*q) << endl;
     //cout << sizeof(circle) << endl;
     return 0;
